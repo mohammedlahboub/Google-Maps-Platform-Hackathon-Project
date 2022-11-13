@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Media/Icons/myLocation.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../Styles/styles.css">
+    <link rel="stylesheet" href="./style/styles.css">
+    <script type="module" defer src="Js/main.js"></script>
+    <title>Create Listing</title> 
+</head>
+<body>
+
+    <main class="root_Wrapper">
+        <div class="navbar_Wrapper">
+            <div class="logo_Wrapper">
+
+            </div>
+            <div class="user_Wrapper">
+                <div class="PrimaryBTNs">
+                    
+                    <div class=" navBar_btn_Txt">
+                        <a href="../" title="Get back to home page">
+                        <button  class="navbar_user_btns ">
+                            <span class="material-symbols-outlined">
+                                home
+                                </span>
+                        </button>
+                        </a>
+                        <p>Back Home</p>
+                    </div>
+                    
+                </div>
+               
+
+            </div>
+
+        </div>
+
+        <div class="content_Wrapper">
+
+
+            <div class="CreateListingForm_Wrapper">
+                <div class="createListingForm displayFlex gap--spacing-p">
+                    
+                    <form class="CreateListingForm_HTML">
+                        <div class="form_inputs_section">
+                            <div title="Listing Photos" class="formelements Listing_photo_container">
+                                <label class="formListingLabel" for="ListingImagesInput">Add a Photo :</label>
+                                <div class="CreateListing_photo_wrapper">
+                                    <img class="photoPreviewBox"></img> 
+                                    
+                                    <button title="Add Photos" type="button" class="addPhotoBTN">
+                                        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24"
+                                            height="48px" viewBox="0 0 24 24" width="48px" fill="#616161">
+                                            <rect fill="none" height="24" width="24" />
+                                            <path
+                                                d="M3,4V1h2v3h3v2H5v3H3V6H0V4H3z M6,10V7h3V4h7l1.83,2H21c1.1,0,2,0.9,2,2v12c0,1.1-0.9,2-2,2H5c-1.1,0-2-0.9-2-2V10H6z M13,19c2.76,0,5-2.24,5-5s-2.24-5-5-5s-5,2.24-5,5S10.24,19,13,19z M9.8,14c0,1.77,1.43,3.2,3.2,3.2s3.2-1.43,3.2-3.2 s-1.43-3.2-3.2-3.2S9.8,12.23,9.8,14z" />
+                                        </svg>
+                    
+                                    </button>
+                                </div>
+                                <input required class="formInput " type="file" accept=".jpg, .jpeg, .png" id="ListingImagesInput"
+                                    name="ListingImages" />
+                            </div>
+                            <div title="Listing Title" class="formelements">
+                                <label class="formListingLabel" for="ListingTitle">Title :</label>
+                                <input required class="ListingTitle formInput"  type="text" name="Listing_title"
+                                    id="ListingTitle">
+                            </div>
+                            <div  title="Listing Price" class="formelements">
+                                <label class="formListingLabel" for="ListingPrice">Price :</label>
+                                <input required  class="formInput" type="number" min="0" max="999999999" name="Listing_Price" id="ListingPrice">
+                            </div>
+                            <div title="Listing Desription" class="formelements">
+                                <label class="formListingLabel" for="CreateListing_description">Description :</label>
+                                <textarea class="CreateListing_description formInput" name="Description"
+                                    id="CreateListing_description" cols="60" maxlength="500" rows="7"></textarea>
+                            </div>
+                            <p id="lat_hiden"></p>
+                            <p id="lng_hiden"></p>
+                        </div>
+                        <div class="formBtns">
+                    
+                            <a href="../" type="button" title="Cancel" class="formCancel_btn form_end_btns">Cancel</a>
+                            <button type="button" title="Publish Item for Sale"
+                                class="formPublish_btn form_end_btns">Publish</button>
+                    
+                        </div>
+                        <button class="formResetBtn" type="reset"></button>
+                    </form>
+                    </div>
+                </div>
+            <div class="Create">
+                <div class="map_map" id="map">
+                    <div class="listingMarkerBody listingMarkerBody_Fake">
+                        <div class="listingMarkerPhotoBox">
+                            <img draggable="false" class="listingMarkerPhoto" src="../Media/Photos/photoWillApearHere.png" alt="Picture of an">
+                        </div>
+                        <div class="listingMarkerDescBox listingMarkerDescBox_Fake">
+                            <div class="listingMarkerTitle listingMarkerTitle_Fake">
+                                <p data-listingTitle>Title </p>
+                            </div>
+                            <div class="  listingMarkerDesc_Fake" data-listingDesc>Description goes here</div>
+
+
+                            <!-- Idk -->
+                            <div></div>
+                
+                
+                            <div class="listingDescBtnsWrapper">
+                                <button class="listingMarkerBtns listingMarkerPrice">
+                                    <p data-listingPrice>Price</p>
+                                </button>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </main>
+    
+     
+</body>
+</html>

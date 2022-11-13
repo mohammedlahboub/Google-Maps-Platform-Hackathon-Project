@@ -1,0 +1,151 @@
+
+:root{
+    --primary-bg: #2b2d42;
+    --secondary-bg:#8d99ae;
+    --primary-accent: #edf2f4;
+    --primary-outline: #;
+    --form-bg : #000000;
+    --secondary-accent:#22a579;
+    --og-text:#616161;
+    --op-text:#000000;
+    --idk-text:#94d1f0;
+    --b-r-main:6px;
+    --spacing-p: 0.5rem;
+    
+
+
+}
+
+.Create{
+    grid-column: 2;
+}
+.map_map{
+    background-color: transparent;
+    padding-top: 8rem;
+}
+.navBar_btn_Txt button:active {
+    border: 2px var(--primary-bg) solid;
+}
+.navbar_user_btns{
+    background-color: var(--primary-bg);
+}
+.navbar_user_btns:active{
+    outline-color: var(--primary-bg);
+}
+.listingMarkerBody_Fake{
+    
+    width: 25rem;
+    background-color: var(--primary-bg);
+    
+}
+.listingMarkerBody_Fake::after{
+
+    border-top: 0px solid var(--primary-bg);
+}
+
+.listingMarkerDescBox_Fake{
+    width: 100%;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+
+
+    font-size: 1.1rem;
+
+    display: grid;
+}
+
+.listingMarkerPrice{
+    background-color: transparent   ;
+    font-size: 1.3rem;
+    color: var(--secondary-accent);
+}
+.listingMarkerTitle_Fake{
+    grid-column: span 2;
+    font-size: 1.3rem;
+    color: var(--primary-accent);
+    font-weight: 600;
+}
+.listingMarkerDesc_Fake{
+    grid-column: span 2 ;
+    width: 100%;
+    white-space: pre-wrap;
+
+    display: block;
+    color: var(--og-text);
+    font-weight: 400;
+}
+.blueText{
+    color: #00aaff;
+    
+}
+.REDText{
+    color: #230303;
+}
+
+.CreateListingForm_Wrapper{
+
+    border: 2px solid var(--primary-bg);
+    /* padding: var(--b-r-main); */
+    border-radius: var(--b-r-main);
+}
+.formResetBtn{
+    border: none;
+    display: none;
+}
+.formCancel_btn{
+    text-decoration: none;
+}
+
+@keyframes drop {
+    0% {
+      transform: translateY(-200px) scaleY(0.9);
+      opacity: 0;
+    }
+    5% {
+      opacity: 0.7;
+    }
+    50% {
+      transform: translateY(0px) scaleY(1);
+      opacity: 1;
+    }
+    65% {
+      transform: translateY(-17px) scaleY(0.9);
+      opacity: 1;
+    }
+    75% {
+      transform: translateY(-22px) scaleY(0.9);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(0px) scaleY(1);
+      opacity: 1;
+    }
+  }
+  .drop {
+    animation: drop 0.3s ease-in-out   ;
+  }
+
+
+@media (max-width:1000px) {
+    
+    
+    .listingMarkerBody_Fake{
+    
+        width: 100%;
+        
+    }
+    
+}
+@media (max-width:620px) {
+    .listingMarkerBody_Fake{
+    
+        width: 100%;
+        
+    }
+  
+    .Create{
+        grid-column: 1;
+        grid-row: span 2;
+    }
+    
+}

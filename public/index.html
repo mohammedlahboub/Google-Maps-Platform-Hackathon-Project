@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Media/Icons/myLocation.svg" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./Styles/styles.css">
+    <script defer type="module" src="./Js/main.js"></script>
+    <title>Market Place On Google Maps Test</title>
+
+</head>
+
+<body>
+
+    <main class="root_Wrapper">
+        <div class="navbar_Wrapper wrapper_bottom_border">
+            <div class="logo_Wrapper">
+
+            </div>
+            <div class="user_Wrapper">
+                <div class="PrimaryBTNs">
+                    <div class=" navBar_btn_Txt">
+                        <button data-goTestLocation   class="navbar_user_btns">
+                            <span class="material-symbols-outlined">
+                                not_listed_location
+                                </span>
+                        </button>
+                        <p>Test Location</p>
+                    </div>
+                    <div class="userLocation_btn navBar_btn_Txt">
+                        <button data-getUserLocation class="navbar_user_btns">
+                            <span class="material-symbols-outlined">
+                                my_location
+                            </span>
+                        </button>
+                        <p>My Location</p>
+                    </div>
+                    <div class="addListing_btn_Wrapper navBar_btn_Txt">
+                        <a href="./create">
+                        <button class=" navbar_user_btns">
+                            <span class="material-symbols-outlined">
+                                add 
+                                </span>
+    
+                        </button>
+                        </a>
+                        <p>Create Listing</p>
+    
+                    </div>
+                </div>
+               
+
+            </div>
+
+        </div>
+
+        <div class="content_Wrapper">
+            <div class="form_Wrapper">
+            </div>
+            <div class="map_Wrapper ">
+                <div class="map_map" id="map"></div>
+            </div>
+        </div>
+    </main>
+<script defer src="https://maps.googleapis.com/maps/api/js?v=beta&key=AIzaSyC0r6H3EIK7hH4I5G9gjtPJpuDX_MBdFFc&callback=initMap&libraries=marker"></script>
+</body>
+
+</html>
